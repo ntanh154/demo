@@ -1,0 +1,125 @@
+.navbar-collapse {
+    .navbar-nav {
+        .nav-item-li {
+            .nav-link{
+                color: #000;
+                &:hover{
+                    opacity: 0.6;
+                }
+            }
+        }
+    }
+}
+.content{
+    .sidebar{
+        
+        width: 100%;
+        max-width: 400px;
+        .sidebar-heading{
+            .sidebar-heading-content {
+                padding: 0 10px;
+                font-size: 20px;
+            }
+                .sidebar-sub-item>ul>li{
+                    list-style: none;
+                    padding:6px 10px;
+                    a{
+                        text-decoration: none;
+                        font-size: 16px;
+                        color: #000;    
+                    }
+                }
+            
+        }
+    }
+}
+.categories-add-table{
+    width: 500px;
+    margin: 0 auto;
+}
+
+.pagination{
+    .pagination-page{
+        margin: 0 6px;
+        border: 1px solid #000;
+        cursor: pointer;
+        a{
+            display: block;
+            padding: 6px 10px;
+            text-decoration: none;
+            color: #000;
+        }
+        &:hover{
+            background-color: #d3d3d3;
+        }
+    }
+}
+
+.category-selection{
+    height: 100px;
+}
+
+.product-wrapper{
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+    .product-link {
+        display: block;
+        overflow: hidden;
+        text-decoration: none;
+        .product-img{
+            width: 100%;
+            transition: 0.2s ease-in-out;
+        }
+        &:hover .product-img{
+            transform: scale(1.1);
+        }
+    }
+    .product-content{
+        cursor: pointer;
+        padding: 8px;
+        width: 100%;
+        .product-heading{
+            display: block; 
+            display: -webkit-box;
+            line-height: 18px; 
+            height: 20px;
+            -webkit-line-clamp: 1; 
+            visibility: visible;
+            text-overflow: ellipsis;
+            overflow:hidden;
+            font-size: 20px; 
+            color: #5a5c69;
+        }
+        .product-price{
+            font-size: 16px;
+            color: #e74a3b;
+            font-weight: 600;
+        }
+        .btn-product{
+            padding: 6px 10px;
+            border: 1px solid #5a5c69;
+            &:hover{
+                border: 1px solid #eb636a;
+                background-color: #eb636a;
+                color: #d4d5da;
+            }
+        }
+    }
+}
+
+.product-image{
+    object-fit: cover;
+}
+
+.product-price {
+    font-size: 20px;
+    color: #de5151;
+    font-weight: 500;
+}
+.product-variant {
+    .product-color {
+        &.active{
+            border: 1px solid #000000;
+        }
+    }
+}
